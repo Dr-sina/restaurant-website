@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+.container{
+    display: grid;
+    grid-template-rows: max-content 80vh repeat(5,max-content);
+    grid-template-columns: repeat(6,1fr);
+}

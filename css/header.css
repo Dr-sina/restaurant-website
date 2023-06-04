@@ -1,0 +1,39 @@
+.header{
+    background-position: right;
+    background-image: linear-gradient(to left, #4d4c4c4f, #000000), url(../pic/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: rgb(24, 24, 25); */
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: repeat(3,max-content);
+    justify-items: center;
+    align-content: center;
+    grid-gap: 10px;
+}
+.header1{
+    font-size: 30px;
+    color: white;
+}
+.header-text{
+    color: orange;
+}
+
+.header-btn{
+    justify-self: center;
+    border: 1px solid orange;
+    box-shadow: 2px 1px 14px orange;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    font-size: 16;
+    padding: 20px;
+    transition: 0.8s all;
+}
+.header-btn:hover{
+    box-shadow: 0px 8px 10px -4px orange;
+    background-color: orange;
+    color: white;
+    transition: 0.8s all;
+    cursor: pointer;
+}

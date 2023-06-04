@@ -1,0 +1,65 @@
+.gallary{
+    /* background-color: darkgoldenrod; */
+    grid-column: 1/-1;
+}
+.gallary-section{
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,280px);
+    grid-template-areas: "gallary-1 gallary-1 gallary-2"
+                         "gallary-3 gallary-4 gallary-2"
+                         "gallary-3 gallary-5 gallary-5";
+    grid-gap: 1rem;
+}
+.img-gallary{
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    transition: 0.5s all;
+}
+.img-gallary:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.gallary-1{
+    grid-area: gallary-1;
+    background-image: url(../pic/img-gallery1.jpg);
+}
+.gallary-2{
+    grid-area: gallary-2;
+    background-image: url(../pic/img-gallery2.jpg);
+}
+.gallary-3{
+    grid-area: gallary-3;
+    background-image: url(../pic/img-gallery3.jpg);
+}
+.gallary-4{
+    grid-area: gallary-4;
+    background-image: url(../pic/img-gallery4.jpg);
+}
+.gallary-5{
+    grid-area: gallary-5;
+    background-image: url(../pic/img-gallery5.jpg);
+}
+@media screen and (max-width:1000px){
+    .gallary-section{
+        grid-template-areas: "gallary-1 gallary-1 gallary-2"
+                             "gallary-4 gallary-4 gallary-4"
+                             "gallary-3 gallary-5 gallary-5";
+    }
+}
+@media screen and (max-width:600px){
+    .gallary-section{
+        padding: 20px 15px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,280px);
+        grid-template-areas: "gallary-1 gallary-1"
+                             "gallary-2 gallary-3"
+                             "gallary-4 gallary-4"
+                             "gallary-5 gallary-5";
+    }
+}
